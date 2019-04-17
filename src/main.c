@@ -6,7 +6,7 @@
 /*   By: akrivosh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/17 18:17:58 by akrivosh          #+#    #+#             */
-/*   Updated: 2019/04/17 18:27:09 by akrivosh         ###   ########.fr       */
+/*   Updated: 2019/04/17 19:33:36 by akrivosh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,6 @@ int		main(int ac, char **av)
 		error("Can't process the map points");
 	init(&p);
 	p.w.mlx_ptr = mlx_init();
-	p.w.win_ptr = mlx_new_window(p.w.mlx_ptr, 1280, 720, "lol");
+	p.w.win_ptr = mlx_new_window(p.w.mlx_ptr, 1280, 720, av[1]);
 	mlx(&p);
 }
